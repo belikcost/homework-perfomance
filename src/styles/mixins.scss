@@ -1,0 +1,10 @@
+@mixin header {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+@mixin breakpoint-to($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

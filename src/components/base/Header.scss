@@ -1,0 +1,41 @@
+@import "/src/styles/vars";
+@import "/src/styles/mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px;
+
+  background: $grey;
+
+  @include breakpoint-to($small-tablet) {
+    &__search {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    &-text {
+      color: $white;
+
+      font-size: 30px;
+      margin-left: 25px;
+    }
+  }
+
+  &_icon {
+    fill: $white;
+
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+

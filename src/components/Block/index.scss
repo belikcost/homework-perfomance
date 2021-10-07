@@ -1,0 +1,46 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.block {
+  display: flex;
+  position: relative;
+  padding-left: 45px;
+
+  &:hover {
+    .block__handlers-group {
+      display: block;
+    }
+  }
+
+  &__handlers-group {
+    display: none;
+    position: absolute;
+    left: 0;
+  }
+
+  &_plus, &_drag {
+    color: $grey;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0 3px;
+    transition: all .3s;
+    margin-right: 5px;
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+
+@include breakpoint-to($small-tablet) {
+  .block {
+    padding: 0 0 45px 0;
+
+    flex-direction: column-reverse;
+
+    &__handlers-group {
+      bottom: 20px;
+    }
+  }
+}

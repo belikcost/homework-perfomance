@@ -1,0 +1,26 @@
+@import "src/styles/mixins";
+@import "src/styles/vars";
+
+.page {
+  width: 50%;
+
+  &__header {
+    padding-left: 45px;
+    display: flex;
+  }
+}
+
+@include breakpoint-to($laptop) {
+  .page {
+    width: 100%;
+  }
+}
+
+@include breakpoint-to($small-tablet) {
+  .page {
+
+    &__header {
+      padding: 0;
+    }
+  }
+}

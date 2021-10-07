@@ -1,0 +1,17 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}

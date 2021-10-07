@@ -1,0 +1,211 @@
+@import "src/styles/vars";
+@import "src/styles/mixins";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  &__body {
+    display: flex;
+    position: relative;
+  }
+
+  &, &__body, &__menu {
+    height: 100%;
+  }
+
+  &__content {
+    width: 80%;
+    padding: 1rem 2rem;
+  }
+
+  &_bg-dark {
+    background: $dark-grey;
+  }
+
+  &__new-page {
+    display: flex;
+    align-items: center;
+
+    padding: 14px;
+
+    color: $dark-grey;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-top: 1px solid $light-grey;
+    cursor: pointer;
+
+    &-icon {
+      fill: $grey;
+
+      margin-right: 8px;
+
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background: $light-grey;
+    }
+  }
+
+  &_row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+
+  padding: 14px;
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 10px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: $dark-white;
+  width: 20%;
+
+  &__pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+  }
+
+  &_icon {
+    display: inline-block;
+  }
+
+  &_icon, &_hidden-icon {
+    flex-shrink: 0;
+
+    fill: $grey;
+
+    width: 18px;
+    height: 18px;
+
+    margin-right: 4px;
+  }
+
+  &_hidden-icon {
+    width: 20px;
+    height: 20px;
+
+    display: none;
+
+    fill: $light-black;
+    padding: 0 4px;
+
+    &:hover {
+      background: $light-grey;
+      border-radius: 3px;
+    }
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: #000;
+
+    padding: 3px 14px;
+
+    cursor: pointer;
+    transition: all 50ms;
+
+    &-content {
+      display: flex;
+      align-items: center;
+
+      max-width: 75%;
+      margin-right: 8px;
+
+      &-text {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &:hover .menu_hidden-icon {
+      display: inline-block;
+    }
+
+    &:hover, &-hovered {
+      background: $light-grey;
+    }
+
+    &-hovered {
+      &:hover {
+        background: $hovered-active-link;
+      }
+    }
+  }
+}
+
+@include breakpoint-to($laptop) {
+  .menu {
+    width: 25%;
+  }
+
+  .layout {
+
+    &__content {
+      width: 75%;
+    }
+  }
+}
+
+@include breakpoint-to($tablet) {
+  .menu {
+    display: none;
+
+    position: absolute;
+    z-index: 2;
+
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
+
+    &_active {
+      display: flex;
+    }
+  }
+
+  .layout {
+
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint-to($small-tablet) {
+  .menu {
+
+    &_hidden-icon {
+      display: inline-block;
+    }
+  }
+}

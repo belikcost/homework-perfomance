@@ -1,0 +1,17 @@
+@import "src/styles/mixins";
+
+.field {
+  border: none;
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+
+  &_heading {
+    @include header;
+    overflow: auto;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
