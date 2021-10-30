@@ -4,7 +4,8 @@ This project is clone from https://www.notion.so/ with small UI changing. Used t
 
 ## Metrics
 
-The App render with metrics which send and initialize in `src/metrics/index.js`. Statistic by metrics collect in `src/metrics/stats.js` and log in console.
+The solving with metrics there are in `solution` branch.
+App render with metrics which send and initialize in `src/metrics/index.js`. Statistic by metrics collect in `src/metrics/stats.js` and log in console.
 
 ## Available Scripts
 
