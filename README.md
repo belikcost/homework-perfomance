@@ -2,6 +2,10 @@
 
 This project is clone from https://www.notion.so/ with small UI changing. Used technologies: react, redux, redux-saga, react-dnd, react-contenteditable.
 
+## Metrics
+
+The App render with metrics which send and initialize in `src/metrics/index.js`. Statistic by metrics collect in `src/metrics/stats.js` and log in console.
+
 ## Available Scripts
 
 In the project directory, you can run:
