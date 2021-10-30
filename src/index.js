@@ -7,16 +7,23 @@ import store from "./redux/store";
 
 import App from './containers/App';
 
+import withMetrics from "./metrics";
+import { buildStats } from "./metrics/stats";
+
 import './assets/fonts/SegoeUI/stylesheet.css';
 import './index.scss';
 
 
-ReactDOM.render(
-    <Router>
-        <Provider store={store}>
-            <App/>
-        </Provider>
-    </Router>,
-    document.getElementById('root')
+withMetrics(
+    () => ReactDOM.render(
+        <Router>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </Router>,
+        document.getElementById('root')
+    )
 );
+
+buildStats();
 
