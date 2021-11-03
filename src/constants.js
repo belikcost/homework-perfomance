@@ -1,3 +1,4 @@
+export const METRICS_GUID = '94187e3f-9890-4855-9d47-1415a650589f';
 export const API_URL = 'http://88.198.64.26:5000';
 
 export const CHANGE_PAGE_REQUEST = 'CHANGE_PAGE_REQUEST';
