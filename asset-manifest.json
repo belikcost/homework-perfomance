@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/homework-perfomance/static/css/main.44c06786.chunk.css",
+    "main.js": "/homework-perfomance/static/js/main.92942c74.chunk.js",
+    "main.js.map": "/homework-perfomance/static/js/main.92942c74.chunk.js.map",
+    "runtime-main.js": "/homework-perfomance/static/js/runtime-main.753c06ea.js",
+    "runtime-main.js.map": "/homework-perfomance/static/js/runtime-main.753c06ea.js.map",
+    "static/js/2.4375f916.chunk.js": "/homework-perfomance/static/js/2.4375f916.chunk.js",
+    "static/js/2.4375f916.chunk.js.map": "/homework-perfomance/static/js/2.4375f916.chunk.js.map",
+    "index.html": "/homework-perfomance/index.html",
+    "static/css/main.44c06786.chunk.css.map": "/homework-perfomance/static/css/main.44c06786.chunk.css.map",
+    "static/js/2.4375f916.chunk.js.LICENSE.txt": "/homework-perfomance/static/js/2.4375f916.chunk.js.LICENSE.txt",
+    "static/media/stylesheet.css": "/homework-perfomance/static/media/SegoeUI.b127acaf.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.753c06ea.js",
+    "static/js/2.4375f916.chunk.js",
+    "static/css/main.44c06786.chunk.css",
+    "static/js/main.92942c74.chunk.js"
+  ]
+}
